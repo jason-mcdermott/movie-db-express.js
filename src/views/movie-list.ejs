@@ -1,0 +1,18 @@
+<h1>Movies</h1>
+
+<table class="data-panel">
+  <tr>
+    <th>Title</th>
+    <th>Genre</th>
+    <th>Director</th>
+    <th>Release Year</th>
+  </tr>
+  <% movies.movies.forEach( movie => { %>
+      <tr>
+        <td><%= movie.title %></td>
+        <td><%= movie.categories[0] %></td>
+        <td><%= movie.director %></td>
+        <td><%= movie.releaseYear %></td>
+      </tr>
+    <% }); %>
+</table>
