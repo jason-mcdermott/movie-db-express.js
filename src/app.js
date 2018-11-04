@@ -25,8 +25,6 @@ app.get('/movie/:id', (req, res) => {
     }
 });
 
-//app.use('/movies', movieRoutes);
-
 app.listen(port, () => { 
     console.log(`app running on port: ${port}`);
 });
