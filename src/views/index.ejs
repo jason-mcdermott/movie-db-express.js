@@ -1,11 +1,11 @@
 <%- include('header') %>
 
 <div class="container">
-    <h1><%= title %></h1>
-    
+    <!--<h1><%= title %></h1>-->
+    <%- include('movie-list',  { movies: movies }) %>
+
+   
+
 </div>
-
-<%- include('movie-list',  { movies: movies }) %>
-
 
 <%- include('footer') %>

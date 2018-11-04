@@ -1,16 +1,14 @@
-{
-    "categories": [
-        {
-          "id": 1,
-          "name": "Sci-Fi"
-        },
-        {
-          "id": 2,
-          "name": "Adventure"
-        },
-        {
-          "id": 3,
-          "name": "Action"
-        }
-      ]
-}
+[
+  {
+    "id": 1,
+    "name": "Sci-Fi"
+  },
+  {
+    "id": 2,
+    "name": "Adventure"
+  },
+  {
+    "id": 3,
+    "name": "Action"
+  }
+]

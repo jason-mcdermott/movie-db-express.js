@@ -1,25 +1,23 @@
-{
-    "movies": [
-        {
-          "id": 1,
-          "title": "Star Wars", 
-          "categories": ["Sci-Fi", "Adventure"], 
-          "director": "George Lucas",
-          "releaseYear": 1977
-        },
-        {
-          "id": 2,
-          "title": "Empire Strikes Back",
-          "categories": ["Sci-Fi", "Adventure"], 
-          "director": "Irvin Kershner",
-          "releaseYear": 1981
-        },
-        {
-          "id": 3,
-          "title": "Return of the Jedi",
-          "categories": ["Sci-Fi"], 
-          "director": "Richard Marquand",
-          "releaseYear": 1983
-        }
-      ]
-}
+ [
+    {
+        "id": 1,
+        "title": "Star Wars", 
+        "categories": ["Sci-Fi", "Adventure"], 
+        "director": "George Lucas",
+        "releaseYear": 1977
+    },
+    {
+        "id": 2,
+        "title": "Empire Strikes Back",
+        "categories": ["Sci-Fi", "Adventure"], 
+        "director": "Irvin Kershner",
+        "releaseYear": 1981
+    },
+    {
+        "id": 3,
+        "title": "Return of the Jedi",
+        "categories": ["Sci-Fi"], 
+        "director": "Richard Marquand",
+        "releaseYear": 1983
+    }
+]
