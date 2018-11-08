@@ -2,27 +2,30 @@
 
 <div class="row">
     <div class="content">
-        <h3>Movie: <%= movie.title %> </h3>
-        <table class="u-full-width">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Genre</th>
-                    <th>Director</th>
-                    <th>Release Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="text" value="<%= movie.title %>"></td>
-                    <td><input type="text" value="<%= movie.categories[0] %>"></td>
-                    <td><input type="text" value="<%= movie.director %>"></td>
-                    <td><input type="text" value="<%= movie.releaseYear %>"></td>
-                </tr>
-            </tbody>
-        </table>
+        <form method="post" action="<%= movie.id %>">
+            <input type="hidden" value="<%= movie.id %>" name="id">
+            <h3>Movie: <%= movie.title %> </h3>
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Director</th>
+                        <th>Release Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" value="<%= movie.title %>" name="title"></td>
+                        <td><input type="text" value="<%= movie.categories[0] %>" name="category"></td>
+                        <td><input type="text" value="<%= movie.director %>" name="director"></td>
+                        <td><input type="text" value="<%= movie.releaseYear %>" name="year"></td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <a href="/">Back</a>
-        <button type="submit">Save</button>
+            <a href="/">Back</a>
+            <button type="submit">Save</button>
+        </form>
     </div>
 </div>

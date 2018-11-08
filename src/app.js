@@ -16,14 +16,7 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Movie Db', movies });
 });
 
-app.get('/movie/:id', (req, res) => {
-    let movieResults = movies.filter(m => m.id == req.params.id)
-    if(movieResults != null){
-        res.render('movie-detail', { 
-            movie: movieResults[0]
-        });
-    }
-});
+app.use('/movie', movieRoutes);
 
 app.listen(port, () => { 
     console.log(`app running on port: ${port}`);

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Star Wars",
+        "director": "George Lucas",
+        "categories": [
+            "Sci-Fi"
+        ],
+        "releaseYear": "1977"
+    },
+    {
+        "id": 2,
+        "title": "Empire Strikes Back",
+        "director": "Irvin Kirshner",
+        "categories": [
+            "Sci-Fi"
+        ],
+        "releaseYear": "1981"
+    },
+    {
+        "id": 3,
+        "title": "Return of the Jedi",
+        "categories": [
+            "Sci-Fi",
+            "Adventure"
+        ],
+        "director": "Richard Marquand",
+        "releaseYear": 1983
+    }
+]
