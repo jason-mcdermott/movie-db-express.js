@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
-const { movies, categories, writeJSON } = require('./data-access');
+const { movies, genres, writeJSON } = require('./data-access');
 const movieRoutes = require('./routes/movies');
 const app = express();
 const port = 3000;
@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => { 
-    res.render('index', { title: 'Movie Db', movies });
+    res.render('index', { title: 'Movie Db', movies, genres });
 });
 
 app.use('/movie', movieRoutes);

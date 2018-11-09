@@ -1,31 +1,31 @@
 <%- include('header'); %>
 
-<div class="row">
-    <div class="content">
-        <form method="post" action="<%= movie.id %>">
-            <input type="hidden" value="<%= movie.id %>" name="id">
-            <h3>Movie: <%= movie.title %> </h3>
-            <table class="u-full-width">
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Genre</th>
-                        <th>Director</th>
-                        <th>Release Year</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="text" value="<%= movie.title %>" name="title"></td>
-                        <td><input type="text" value="<%= movie.categories[0] %>" name="category"></td>
-                        <td><input type="text" value="<%= movie.director %>" name="director"></td>
-                        <td><input type="text" value="<%= movie.releaseYear %>" name="year"></td>
-                    </tr>
-                </tbody>
-            </table>
+<div class="container">
+    <section class="header">
+        <h2 class="title"><%= movie.title %> </h2>
+    </section>
+    <form method="post" action="<%= movie.id %>">
+        <input type="hidden" value="<%= movie.id %>" name="id">
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Director</th>
+                    <th>Release Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" value="<%= movie.title %>" name="title"></td>
+                    <td><input type="text" value="<%= movie.categories[0] %>" name="category"></td>
+                    <td><input type="text" value="<%= movie.director %>" name="director"></td>
+                    <td><input type="text" value="<%= movie.releaseYear %>" name="year"></td>
+                </tr>
+            </tbody>
+        </table>
 
-            <a href="/">Back</a>
-            <button type="submit">Save</button>
-        </form>
-    </div>
+        <a href="/">Back</a>
+        <button class="button-primary" type="submit">Save</button>
+    </form>
 </div>

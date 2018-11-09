@@ -1,25 +1,23 @@
-<div class="row">
-    <div class="content">
-        <h3>Movies</h3>
-        <table class="u-full-width">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Genre</th>
-                    <th>Director</th>
-                    <th>Release Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% movies.forEach( movie => { %>
-                    <tr>
-                        <td><a href="/movie/<%= movie.id %>"><%= movie.title %></a></td>
-                        <td><%= movie.categories[0] %></td>
-                        <td><%= movie.director %></td>
-                        <td><%= movie.releaseYear %></td>
-                    </tr>
-                <% }); %>
-            </tbody>
-        </table>
-    </div>
-</div>
+<section class="header">
+    <h2 class="title">Movies</h2>
+</section>
+<table class="u-full-width">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Director</th>
+            <th>Release Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% movies.forEach( movie => { %>
+            <tr>
+                <td><a href="/movie/<%= movie.id %>"><%= movie.title %></a></td>
+                <td><%= movie.categories[0] %></td>
+                <td><%= movie.director %></td>
+                <td><%= movie.releaseYear %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+</table>

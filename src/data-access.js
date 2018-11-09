@@ -6,14 +6,14 @@ const movieData = fs.readFileSync(
 );
 const movies = JSON.parse(movieData);
 
-const categoryData = fs.readFileSync(
-    path.join(__dirname, 'data', 'categories.json'), 'utf8'
+const genreData = fs.readFileSync(
+    path.join(__dirname, 'data', 'genres.json'), 'utf8'
 );
-const categories = JSON.parse(categoryData);
+const genres = JSON.parse(genreData);
 
-const writeJSON = (data) => {
-    const moviesJSON = JSON.stringify(data, null, 4);
-    fs.writeFileSync(path.join(__dirname, 'data/movies.json'), moviesJSON, 'utf8');
+const writeJSON = (data, type) => {
+    const json = JSON.stringify(data, null, 4);
+    fs.writeFileSync(path.join(__dirname, `data/${type}.json`), json, 'utf8');
 };
 
-module.exports = { movies, categories, writeJSON };
+module.exports = { movies, genres, writeJSON };
